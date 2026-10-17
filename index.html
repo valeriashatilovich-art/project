@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="eg">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Сколько пролетит дрон?</h1>
+
+    <div class="calculator-card">
+        
+        <div class="section-title">Маршрут</div>
+        <div class="input-group">
+            <label>Расстояние в одну сторону (км)</label>
+            <input type="number" id="distance" placeholder="Например, 5">
+            <span class="unit">км</span>
+        </div>
+        <div class="input-group">
+            <label>Скорость полет (км/ч)</label>
+            <input type="number" id="speed" placeholder="Например, 40">
+            <span class="unit">км/ч</span>
+        </div>
+
+        <div class="section-title">Аккумулятор (LiPo)</div>
+        <div class="input-group">
+            <label>Емкость (мАч)</label>
+            <input type="number" id="capacity" placeholder="Например, 1300">
+            <span class="unit">мАч</span>
+        </div>
+        <div class="input-group">
+            <label>Токоотдача (C-rating)</label>
+            <input type="number" id="c_rating" placeholder="Например, 65">
+            <span class="unit">C-rating</span>
+        </div>
+        <div class="input-group">
+            <label>Вес аккумулятора (грамм)</label>
+            <input type="number" id="battery_weight" placeholder="Например, 250">
+            <span class="unit">грамм</span>
+        </div>
+
+        <div class="section-title">Характеристики ВМГ</div>
+        <div class="input-group">
+            <label>Вес дрона БЕЗ батареи (грамм)</label>
+            <input type="number" id="drone_weight" placeholder="Например, 300">
+            <span class="unit">грамм</span>
+        </div>
+        <div class="input-group">
+            <label>Параметр мотора (KV)</label>
+            <input type="number" id="kv_motor" placeholder="Например, 2207">
+            <span class="unit">KV</span>
+            </div>
+        <div class="input-group">
+            <label>Размер пропеллеров (дюймы)</label>
+            <input type="number" id="prop_size" placeholder="Например, 16">
+            <span class="unit">дюймы</span>
+        </div>
+        <button type="button" id="calculate_btn" class="calc-button">Рассчитать</button>
+        <div class="answer-box" id="result_time">
+            Время полета (мин)
+        </div>
+    </div>
+</body>
+</html>
