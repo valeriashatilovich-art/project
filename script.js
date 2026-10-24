@@ -6,10 +6,10 @@ function calculate() {
     const distance = getNumber('distance');
     const v = getNumber('speed');
     const C = getNumber('capacity');
-    const S = getNumber('cells');
+    const S = getNumber('c_rating');
     const m_a1 = getNumber('battery_weight');
     const m_d1 = getNumber('drone_weight');
-    const KV = getNumber('kv_motor');
+    const KV = getNumber('kv');
     const D = getNumber('prop_size');
 
     const out = document.getElementById('result_time');
