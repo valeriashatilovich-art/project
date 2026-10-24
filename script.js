@@ -15,7 +15,10 @@ function calculate() {
     const out = document.getElementById('result_time');
 
     const values = [distance, v, C, S, m_a1, m_d1, KV, D];
-    (`if (values.some(x=>isNaN(x)||x<=0)){out.textContent="Заполните все поля положительными числами"; return;}`)
+    if (values.some(x => isNaN(x)||x <= 0)){
+        out.textContent=`Заполните все поля положительными числами`;
+        return;
+    }
     const m_d = m_d1 / 1000;
     const m_a = m_a1 / 1000;
     const q = C / 1000;
@@ -33,6 +36,6 @@ function calculate() {
     const need = distance * 2;
     const ok = S_max >= need;
 
-    out.innerHTML = "<b>${t_min.toFixed(1)} мин</b><br>+(ok ? '✅ Успешно пролетит!' : '❌ Не хватит заряда!');
+    out.innerHTML = `<b>${t_min.toFixed(1)} мин</b><br>`+(ok ? 'Успешно пролетит!' : 'Не хватит заряда!');
 }
 
