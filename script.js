@@ -13,9 +13,9 @@ function calculate() {
     const D = getNumber('prop_size');
 
     const out = document.getElementById('result_time');
-    
+
     const values = [distance, v, C, S, m_a1, m_d1, KV, D];
-    if all.some(isNaN) || all.some (v >= v <= 0)}
+    (`if (values.some(x=>isNaN(x)||x<=0)){out.textContent="Заполните все поля положительными числами"; return;}`)
     const m_d = m_d1 / 1000;
     const m_a = m_a1 / 1000;
     const q = C / 1000;
