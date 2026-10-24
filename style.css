@@ -2,7 +2,6 @@ body {
     background-image: url('drone.jpg');
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
     
     font-family: Arial, sans-serif;
     display: flex;
